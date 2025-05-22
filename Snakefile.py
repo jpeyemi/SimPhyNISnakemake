@@ -4,7 +4,7 @@
 
 """ PRE-SNAKEMAKE """
 
-sampleFile = 'samples.csv' #run_type key: 0 - All against All, 1 - First against All
+sampleFile = 'samples_example.csv' #run_type key: 0 - All against All, 1 - First against All
 intermediariesDirectory = '' #EX: '/home/iobal/orcd/c7/scratch/iobal/AssociationSnakemake/' 
 # Empty string will put intermediaries in the same file systems as outputs
 # Must end with /
