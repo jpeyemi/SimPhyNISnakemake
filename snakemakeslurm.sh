@@ -1,19 +1,6 @@
 #!/bin/bash
 
-#
-# check for clean
-#
-# https://snakemake.readthedocs.io/en/stable/project_info/faq.html#how-do-i-remove-all-files-created-by-snakemake-i-e-like-make-clean
-# if [ "$1" == "clean" ]; then
-#     echo 'rm $(snakemake --summary | tail -n+2 | cut -f1)'
-#     snakemake --summary | tail -n+2 | cut -f1
-#     rm -f $(snakemake --summary | tail -n+2 | cut -f1)
-#     exit 0
-# fi
-
-#
 # launch snakemake to run jobs via SLURM
-# ntasks
 SM_PARAMS="job-name ntasks partition time mail-user mail-type error output"
 
 SM_ARGS=" --no-requeue --parsable --cpus-per-task {cluster.cpus-per-task} --mem {cluster.mem}"
@@ -46,7 +33,3 @@ snakemake -p \
     --conda-frontend conda \
     --conda-prefix /home/iobal/mit_lieberman/tools/conda_snakemake \
     -s Snakefile.py 
-    # --dag \
-    # | dot -Tsvg > dag.svg
-
-    # --groups make_blastdb_refgenome=smalljobs blast_refgenome=smalljobs --group-components smalljobs=10 \
