@@ -100,4 +100,4 @@ Outputs are placed in structured folders in the snakemake directory with final r
 
 ## Contact
 
-For questions, please open an issue or contact \[Ishaq Balogun] at \[https://github.com/jpeyemi].
+For questions, please open an issue or contact Ishaq Balogun at https://github.com/jpeyemi.
