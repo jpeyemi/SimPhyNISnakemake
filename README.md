@@ -1,6 +1,4 @@
-# SimPhyNISnakemake
-
-# SimPhyNI Snakemake Workflow
+# SimPhyNI Snakemake
 
 ## Overview
 
